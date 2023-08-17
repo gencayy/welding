@@ -1,0 +1,5 @@
++Butondan veri okunacak
++Servo motor 
++Potansiyometre
+-Nema17 step motor
+-Neman23 step motor 
