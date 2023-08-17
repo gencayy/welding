@@ -6,9 +6,11 @@ AccelStepper spinMotor(1, SPIN_MOTOR_PUL, SPIN_MOTOR_DIR);
 
 void init_spin_motor()
 {
+    spinMotor.setEnablePin(SPIN_MOTOR_ENA);
     spinMotor.setMaxSpeed(100);
     spinMotor.setAcceleration(100);
     spinMotor.setSpeed(100);
+    spinMotor.enableOutputs();
 }
 
 void spinCW()
@@ -51,4 +53,11 @@ void spinCCW()
     spinMotor.runSpeed();
   }
   return;
+}
+
+void stopStepper()
+{
+    spinMotor.stop();
+    spinMotor.setCurrentPosition(0);
+    return;
 }

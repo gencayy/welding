@@ -5,16 +5,18 @@
 #include <AccelStepper.h>
 
 //Z MOTORA BAXLANACAK
-#define SPIN_MOTOR_PUL 46
-#define SPIN_MOTOR_DIR 48
+#define SPIN_MOTOR_PUL 26
+#define SPIN_MOTOR_DIR 28
+#define SPIN_MOTOR_ENA 30
 
 #define STEP_PER_REV 200
 
-extern AccelStepper spinMotor(1, SPIN_MOTOR_PUL, SPIN_MOTOR_DIR);
+extern AccelStepper spinMotor;
 
 void init_spin_motor();
 
 void spinCW();
 void spinCCW();
+void stopStepper();
 
 #endif
