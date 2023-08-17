@@ -5,8 +5,8 @@
 #include <AccelStepper.h>
 
 //Z MOTORA BAXLANACAK
-#define SPIN_MOTOR_PUL 26
-#define SPIN_MOTOR_DIR 28
+#define SPIN_MOTOR_PUL 36
+#define SPIN_MOTOR_DIR 34
 #define SPIN_MOTOR_ENA 30
 
 #define STEP_PER_REV 200

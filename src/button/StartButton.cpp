@@ -19,9 +19,13 @@ void debounceHandle()
   if ( (millis() - lastDebounceTime) > debounceDelay) {
     // Eger butona basılmışsa ve makine çalışır durumda değilse
     if( buttonState  == HIGH){
-      
+
       closeTourch();
+      delay(1000);
+
       spinCW();
+      delay(1000);
+ 
       openTourch();
 
       lastDebounceTime = millis();
